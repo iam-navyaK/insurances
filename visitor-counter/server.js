@@ -12,8 +12,7 @@ app.use(express.json());
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/visitorsDB', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+
 });
 
 mongoose.connection.on('connected', () => {
