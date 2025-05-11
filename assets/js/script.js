@@ -199,3 +199,4 @@ fetch('http://localhost:5000/api/visit')
   .then(data => {
     document.getElementById('visitorCount').innerText = data.count;
   });
+
